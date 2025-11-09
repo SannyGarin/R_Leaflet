@@ -1,0 +1,30 @@
+---
+title: "My Leaflet"
+author: "Sanny Garin Jr"
+date: "2025-11-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r , echo=FALSE}
+library(leaflet)
+```
+
+## My first ever use of  leaflet by R markdown hosted in github
+
+This is Rizal Park in Manila, Philippines where I came from
+
+```{r }
+leaflet() %>%
+  addTiles() %>%
+  addRectangles(lat1 = 14.5800, lng1 = 120.9750, 
+                lat2 = 14.5840, lng2 = 120.9815)
+```
+
+
+
+
